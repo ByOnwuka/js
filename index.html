@@ -12,8 +12,13 @@
     </head>
     <body>
         <div ng-controller='HelloController'>
-            <input ng-model='greeting.text' type="text" autofocus placeholder="Email address" class="form-control">
-            <p>{{greeting.text}}, World</p>
+            <p>{{greeting.text}}, {{greeting.firstName}}.</p>
+            <input 
+                ng-model='greeting.firstName' 
+                type="text" 
+                autofocus 
+                placeholder="Let me introduce myself. I'm On and you are? Please enter your preferred first name." 
+                class="form-control">
         </div>
     </body>
 </html>
